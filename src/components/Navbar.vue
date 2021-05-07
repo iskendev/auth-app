@@ -10,6 +10,7 @@
   export default {
     methods: {
       logout() {
+        this.$router.push('/')
         this.$store.commit('auth/LOGOUT')
       }
     },
