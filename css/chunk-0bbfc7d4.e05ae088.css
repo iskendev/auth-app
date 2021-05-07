@@ -1,0 +1,1 @@
+.login{display:flex;justify-content:center;align-items:center;height:calc(100% - 60px)}.login__form{border:1px solid #ddd;border-radius:5px;width:300px;padding:10px 30px}.login__form--password,.login__form--username{display:flex;flex-direction:column;font-size:14px;margin:20px 0}.login__form--btn{width:100%;text-align:center}
