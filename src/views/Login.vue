@@ -46,7 +46,7 @@
               this.$router.push('/collections')
               this.isDisabled = false
             })
-            .catch(e => console.log(e))
+            .catch(e => alert(`${e}: Probably the credentials are incorrect`))
         } else {
           alert("Введите данные");
         }
