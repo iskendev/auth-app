@@ -1,32 +1,60 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Navbar />
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+  import Navbar from './components/Navbar'
+  export default {
+    components: {
+      Navbar
     }
   }
-}
+</script>
+
+<style lang="scss">
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #app {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+    height: 100vh;
+    font-family: 'Noto Sans JP', sans-serif;
+
+    input {
+      font-size: 16px;
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      font-family: 'Noto Sans JP', sans-serif;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      display: inline-block;
+      width: 50%;
+      margin: 20px 0 10px 0;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: #89CFF0;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: #61c4f1;
+      }
+    }
+  }
 </style>
